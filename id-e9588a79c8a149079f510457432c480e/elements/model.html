@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Referentie Domeinmodel GGZ 1.0</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Referentie Domeinmodel GGZ 1.0</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Deze archimate publicatie is &#233;&#233;n op &#233;&#233;n weergave van de RDG versie 1.0 die als bron geldt voor dit model.
+- Wijzigingen worden bewust niet doorgevoerd in deze publicatie maar dienen doorgevoerd te worden in de bron.
+- Foutjes die ontstaan zijn bij het overnemen worden uiteraard wel gecorrigeerd wanneer nodig
+
+Bron:  https://nictiz.nl/standaarden/referentiedomeinenmodellen/referentiedomeinmodel-ggz/
+
+Referentiedomeinmodel
+&#61623; referentie: het biedt een gemeenschappelijke basis, die direct toegepast kan worden, maar die desgewenst ook toegespitst kan worden op specifieke situaties in GGZ-instellingen;
+&#61623; domeinenmodel: dit geeft aan dat het gaat om een model dat bestaat uit (informatie)domeinen;
+&#61623; GGZ: het heeft betrekking op de informatievoorziening van GGZ-instellingen.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-e9588a79c8a149079f510457432c480e", type:"ArchimateModel", name:decodeURL("Referentie+Domeinmodel+GGZ+1.0"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-149e8a923b8b486a9ae52d4be2f8b12f", contenttype:"Folder"});
+								dataFolders.push({id:"id-149e8a923b8b486a9ae52d4be2f8b12f", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-eebe69fe736149f9b72cd7cf5020d5c5", contenttype:"Folder"});
+								dataFolders.push({id:"id-eebe69fe736149f9b72cd7cf5020d5c5", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-eebe69fe736149f9b72cd7cf5020d5c5", contentid:"id-4b02c9acb6194ebcb08b374f32acb3fb", contenttype:"Folder"});
+									dataFolders.push({id:"id-4b02c9acb6194ebcb08b374f32acb3fb", type:"Folder", name:decodeURL("RDG+documentatie"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-4b02c9acb6194ebcb08b374f32acb3fb", contentid:"id-bce3ef59a132453eb9b2005f002cd39b", contenttype:"Representation"});
+											dataElements.push({id:"id-bce3ef59a132453eb9b2005f002cd39b", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+pdf"), documentation:decodeURL("https%3A%2F%2Fnictiz.nl%2Fapp%2Fuploads%2F2021%2F11%2F14001A_Referentiedomeinenmodel_GGZ_versie_1_00.pdf")});
+										dataFoldersContent.push({folderid:"id-4b02c9acb6194ebcb08b374f32acb3fb", contentid:"id-56c5e5a473794043a50ab86ea9f62f19", contenttype:"Representation"});
+											dataElements.push({id:"id-56c5e5a473794043a50ab86ea9f62f19", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+presentatie"), documentation:decodeURL("https%3A%2F%2Fnictiz.nl%2Fapp%2Fuploads%2F2021%2F11%2F14001C_Presentatie_Referentiedomeinenmodel_GGZ_versie_1_00.pptx")});
+										dataFoldersContent.push({folderid:"id-4b02c9acb6194ebcb08b374f32acb3fb", contentid:"id-960158e51ae5406c9f366c0bcdc3321f", contenttype:"Representation"});
+											dataElements.push({id:"id-960158e51ae5406c9f366c0bcdc3321f", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+spreadsheet"), documentation:decodeURL("https%3A%2F%2Fnictiz.nl%2Fapp%2Fuploads%2F2021%2F11%2F14001B_Spreadsheet_Referentiedomeinenmodel_GGZ_versie_1_00.xlsx")});
+										dataFoldersContent.push({folderid:"id-4b02c9acb6194ebcb08b374f32acb3fb", contentid:"id-87d9c52569354bd2934ce7064c3c7867", contenttype:"Representation"});
+											dataElements.push({id:"id-87d9c52569354bd2934ce7064c3c7867", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+website"), documentation:decodeURL("https%3A%2F%2Fnictiz.nl%2Fstandaarden%2Freferentiedomeinenmodellen%2Freferentiedomeinmodel-ggz%2F")});
+
+									dataFoldersContent.push({folderid:"id-eebe69fe736149f9b72cd7cf5020d5c5", contentid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contenttype:"Folder"});
+									dataFolders.push({id:"id-79c1accfb4924e4fa8dd22e297a5bf7b", type:"Folder", name:decodeURL("RDG+Metamodel"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-56967f9fa0d64d929619fc1b52da5915", contenttype:"BusinessProcess"});
+											dataElements.push({id:"id-56967f9fa0d64d929619fc1b52da5915", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Bedrijfsactiviteit"), documentation:decodeURL("Een+taak+met+de+juiste+afbakening+om+toegekend+te+worden+aan+een+specifiek+persoon+of+rol.")});
+														dataProperties.push({conceptid:"id-56967f9fa0d64d929619fc1b52da5915", propkey:decodeURL("Soort+element"), propvalue:decodeURL("Activiteit")});
+
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-0c224199ebe443cda2f497ccb453b56b", contenttype:"BusinessProcess"});
+											dataElements.push({id:"id-0c224199ebe443cda2f497ccb453b56b", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Bedrijfsactiviteit+"), documentation:decodeURL("Een+taak+met+de+juiste+afbakening+om+toegekend+te+worden+aan+een+specifiek+persoon+of+rol.")});
+														dataProperties.push({conceptid:"id-0c224199ebe443cda2f497ccb453b56b", propkey:decodeURL("Soort+element"), propvalue:decodeURL("Activiteit")});
+
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-c4fb98be45944c1191a56865b7e35572", contenttype:"BusinessFunction"});
+											dataElements.push({id:"id-c4fb98be45944c1191a56865b7e35572", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Bedrijfsfunctie"), documentation:decodeURL("Een+set+van+activiteiten+die+onderlinge+samenhang+vertonen+in+de+vereiste+kennis%2C+vaardigheden+of+resources.")});
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-1e830e2f470a4f6499dedddd7cd8842c", contenttype:"BusinessFunction"});
+											dataElements.push({id:"id-1e830e2f470a4f6499dedddd7cd8842c", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Bedrijfsfunctie+"), documentation:decodeURL("Een+set+van+activiteiten+die+onderlinge+samenhang+vertonen+in+de+vereiste+kennis%2C+vaardigheden+of+resources.%0D%0A%0D%0AOPMERKING+-+Er+is+nergens+een+harde+archimate+mapping+gelegd.+De+informatiedomeinen+vind+ik+echter+heel+erg+overeenkomen+met+de+definite+van+bedrijfsfuntie.+")});
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", contenttype:"BusinessProcess"});
+											dataElements.push({id:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Bedrijfsproces"), documentation:decodeURL("Een+reeks+van+activiteiten+met+een+duidelijk+start+en+eindpunt%2C+met+een+duidelijk+vastgesteld+doel.%0D%0A%0D%0AOPMERKING%3A+De+RDG+bevat+g%C3%A9%C3%A9n+bedrijfsprocessen.+Bedrijfsprocessen+kunnen+prima+gestandaardiseerd+worden+maar+zijn+vaak+instelling+specifiek.+Daarnaast+kan+archimate+prima+gebruikt+worden+om+een+proces+te+benoemen+maar+voor+de+uitwerking+zijn+%27betere%27+opties+beschikbaar%2C+zoals+BPMN+%28zie+ook%3A+https%3A%2F%2Fpubs.opengroup.org%2Farchitecture%2Farchimate32-doc%2F%23_Toc112155131%29")});
+														dataProperties.push({conceptid:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", propkey:decodeURL("Soort+element"), propvalue:decodeURL("Proces")});
+
+										dataFoldersContent.push({folderid:"id-79c1accfb4924e4fa8dd22e297a5bf7b", contentid:"id-5909203726d34d5db350eceb6049973f", contenttype:"BusinessObject"});
+											dataElements.push({id:"id-5909203726d34d5db350eceb6049973f", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("Informatieobject"), documentation:decodeURL("")});
+
+									dataFoldersContent.push({folderid:"id-eebe69fe736149f9b72cd7cf5020d5c5", contentid:"id-cadcbfc6fc9440e8b0b11fefd1ca9e8d", contenttype:"Folder"});
+									dataFolders.push({id:"id-cadcbfc6fc9440e8b0b11fefd1ca9e8d", type:"Folder", name:decodeURL("RDG+eigen+documentatie"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-cadcbfc6fc9440e8b0b11fefd1ca9e8d", contentid:"id-6ae6ce2d40f746cabff4d9bb5e927b05", contenttype:"Representation"});
+											dataElements.push({id:"id-6ae6ce2d40f746cabff4d9bb5e927b05", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+-+architectuur+publicatie"), documentation:decodeURL("De+html+publicatie+van+het+architectuur+model+%22Referentie+Domeinmodel+GGZ+1.0%22")});
+										dataFoldersContent.push({folderid:"id-cadcbfc6fc9440e8b0b11fefd1ca9e8d", contentid:"id-e3ab3730df974d179fe700656dc26885", contenttype:"Representation"});
+											dataElements.push({id:"id-e3ab3730df974d179fe700656dc26885", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+architectuur+model"), documentation:decodeURL("Het+Archi+model+%22Referentie+Domeinmodel+GGZ+1.0%22%0D%0A%0D%0A%22RM+-+Referentie+Domeinmodel+GGZ+1.0.archimate%22+-+Op+verzoek+te+delen%0D%0A")});
+										dataFoldersContent.push({folderid:"id-cadcbfc6fc9440e8b0b11fefd1ca9e8d", contentid:"id-c597260fb56b422fa0d14109ddebc7ac", contenttype:"Representation"});
+											dataElements.push({id:"id-c597260fb56b422fa0d14109ddebc7ac", type:"Representation", specialization:decodeURL(""), name:decodeURL("RDG+v1.0+-+architectuur+presentatie"), documentation:decodeURL("Een+PowerPoint+presentatie+van+het+architectuur+model%0D%0A%0D%0ALocatie+volgt")});
+
+									dataFoldersContent.push({folderid:"id-eebe69fe736149f9b72cd7cf5020d5c5", contentid:"id-87a8eac470cd40dab57980710189cf5a", contenttype:"Folder"});
+									dataFolders.push({id:"id-87a8eac470cd40dab57980710189cf5a", type:"Folder", name:decodeURL("RDG+Informatiedomeinen"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-87a8eac470cd40dab57980710189cf5a", contentid:"id-6e33cf017044465ba7045ed7bdacf8dd", contenttype:"Folder"});
+										dataFolders.push({id:"id-6e33cf017044465ba7045ed7bdacf8dd", type:"Folder", name:decodeURL("Niveau+1"), documentation:decodeURL("")});
+											dataFoldersContent.push({folderid:"id-6e33cf017044465ba7045ed7bdacf8dd", contentid:"id-69e86aa8a9474d43baf8e8210d5c2b4a", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-69e86aa8a9474d43baf8e8210d5c2b4a", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Bedrijfsondersteuing"), documentation:decodeURL("Binnen+bedrijfsondersteuning+vallen+de+domeinen+die+ondersteunend+zijn+aan+het+bedrijfs%28zorg%29proces.")});
+											dataFoldersContent.push({folderid:"id-6e33cf017044465ba7045ed7bdacf8dd", contentid:"id-2d034b6a9809459f85f18a7edc535eec", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-2d034b6a9809459f85f18a7edc535eec", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Samenwerking"), documentation:decodeURL("Samenwerking+vindt+over+de+domeinen+heen+plaats%2C+bijvoorbeeld+tussen+zorg%2C+onderwijs+en+onderzoek%2C+maar+ook+bij+verwijzing+en+uitwisseling+met+andere+zorginstanties+en+zorgverlener.+Samenwerking+kent+daarnaast+ook+zijn+eigen+specifieke+activiteiten+en+informatieobjecten%2C+denk+bijvoorbeeld+aan+zelfmanagement%28informatie%29.+Samenwerking+sluit+ook+goed+aan+bij++ontwikkelingen+rondom+zoals%2C+eHealth%2C+interoperabiliteit+en+noodzaak+voor+samenwerking%2C+uitwisseling+en+verbinding.")});
+											dataFoldersContent.push({folderid:"id-6e33cf017044465ba7045ed7bdacf8dd", contentid:"id-f387e590a03c47ada88eda3260532753", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-f387e590a03c47ada88eda3260532753", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Sturing+en+Verantwoording"), documentation:decodeURL("Sturing+en+verantwoording+betreft+de+strategische+sturing+en+verantwoording+vanuit+het+hoger+management%2C+en+de+sturing+en+verantwoording+op+tactisch+en+operationeel+niveau.")});
+											dataFoldersContent.push({folderid:"id-6e33cf017044465ba7045ed7bdacf8dd", contentid:"id-33a58ab1ee1a4d5cb25c224b45d05a48", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-33a58ab1ee1a4d5cb25c224b45d05a48", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Zorgprocesondersteuning"), documentation:decodeURL("Binnen+Zorgprocesondersteuning+vallen+de+domeinen+die+ondersteunend+zijn+aan+het+zorgproces.")});
+											dataFoldersContent.push({folderid:"id-6e33cf017044465ba7045ed7bdacf8dd", contentid:"id-d963497196774f69a7d120d00adffb46", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-d963497196774f69a7d120d00adffb46", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Zorgverlening"), documentation:decodeURL("Binnen+Zorgverlening+vallen+de+domeinen+waarbinnen+de+zorg+geleverd+wordt.")});
+
+										dataFoldersContent.push({folderid:"id-87a8eac470cd40dab57980710189cf5a", contentid:"id-7247d7abf01447958169e73d58bf7f4a", contenttype:"Folder"});
+										dataFolders.push({id:"id-7247d7abf01447958169e73d58bf7f4a", type:"Folder", name:decodeURL("Niveau+2"), documentation:decodeURL("")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-2423a37f09c54469bb81c3f35e04da12", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-2423a37f09c54469bb81c3f35e04da12", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Verwijzing"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+verwijzingen+van+en+naar+andere+zorgverleners.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-3018630dd5f844debadd6d603e07a19c", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-3018630dd5f844debadd6d603e07a19c", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Informatie-uitwisseling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+uitwisseling+van+zorginformatie+met+externe+zorgverleners+%28excl.+verwijzingen%29.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-a048612c71484e028c4ef6f61083ef16", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-a048612c71484e028c4ef6f61083ef16", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Participatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+de+participatie+van+de+pati%C3%ABnt+bij+zijn+eigen+zorgproces.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-40d7fb774a09426186ac513149e01460", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-40d7fb774a09426186ac513149e01460", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Kennis-management"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+managen+van+de+informatie-uitwisseling+tussen+kennisaanbieder+en+kennisvrager.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-2bb088fb1fd94153992078e5cee9c7e3", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-2bb088fb1fd94153992078e5cee9c7e3", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Wetenschappelijk+onderzoek"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+wetenschappelijk+onderzoek.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-8f05b57c4ab74278bad25b2e15de39f0", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-8f05b57c4ab74278bad25b2e15de39f0", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Onderwijs"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+gericht+zijn+op+het+aanbieden+van+onderwijs.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-6724f35d0bec48bfa770f610e7d6d78a", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-6724f35d0bec48bfa770f610e7d6d78a", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Behandeling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+uitvoeren%2C+meten+en+bijstellen+van+de+behandeling%28en%29+en+begeleiding+van+de+pati%C3%ABnt+daarbij.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-a5ed01bca8c14487a4add30307b2baf2", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-a5ed01bca8c14487a4add30307b2baf2", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Verzorging"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+verzorgen+van+de+pati%C3%ABnt+en+het+bieden+van+zorgondersteunende+%28klinische%29+diensten.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-95c1892055a645fcac3196ef64c8c527", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-95c1892055a645fcac3196ef64c8c527", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Medicatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+voorschrijven%2C+bereiden+en+toedienen+van+medicatie%2C+alsmede+het+bewaken+van+medicatiegebruik.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-0b5e5c1e848d48829eacfdd712853223", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-0b5e5c1e848d48829eacfdd712853223", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Aanmelding"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+de+aanmelding+van+%28nieuwe%29+pati%C3%ABnten%2C+doorverwezen+door+een+erkende+verwijzer.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-3e64e1bbf48d422bbe6e0ae0c5e5cd66", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-3e64e1bbf48d422bbe6e0ae0c5e5cd66", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Toeleiding"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+bepalen+van+de+noodzakelijke+zorg+op+basis+van+een+gestelde+diagnose+en+de+vaststelling+daarvan+in+de+vorm+van+een+behandelplan.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-93b07546c6ad4a54bce23b37fccd01a2", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-93b07546c6ad4a54bce23b37fccd01a2", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Be%C3%ABindigen+zorg"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+be%C3%ABindigen+van+de+zorgrelatie+en+afsluiten+van+de+behandeling+door+ontslag+en%2Fof+overdracht+in+de+keten.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-2734f2974e0e40fd9bfce098f262c0bc", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-2734f2974e0e40fd9bfce098f262c0bc", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Aanvullend+onderzoek"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+doen+van+intern+of+extern+aanvullend+onderzoek+ten+behoeve+van+toeleiding+of+behandeling+van+de+pati%C3%ABnt.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-7d251e54584d4758abdfe0537f9a4d96", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-7d251e54584d4758abdfe0537f9a4d96", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Zorgrelatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+identificeren%2C+vastleggen+en+onderhouden+van+zorgrelaties%2C+inclusief+zorgverleners+en+financiers.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-6fd06de88e4f4c71811028a0e41c1de9", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-6fd06de88e4f4c71811028a0e41c1de9", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Resource+planning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+plannen+van+de+inzet+van+personeel+en+locaties.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-15440a0e30ad455bab6c8fda031727ab", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-15440a0e30ad455bab6c8fda031727ab", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Zorgplanning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+vastleggen+van+afspraken+en+planning+van+de+zorgverlening+aan+pati%C3%ABnten.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-e0476eb0da4246069c9460138a989304", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-e0476eb0da4246069c9460138a989304", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Financi%C3%ABle+afhandeling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+registreren+van+behandelactiviteiten+%28DBC%27s%29+en+zorgverlening%2C+ten+behoeve+van+de+facturering+van+de+zorg.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-2c85b5a5d77143f6b744fdb2af777cea", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-2c85b5a5d77143f6b744fdb2af777cea", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Beheer+gebouwen"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+met+betrekking+tot+het+beheren+en+exploiteren+van+gebouwen.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-e3b49299c53743ef9e2b707ae7b91bae", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-e3b49299c53743ef9e2b707ae7b91bae", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Inkoop-%2C+contract-%2C+en+voorraad-beheer"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+inkoop%2C+contractuele+afspraken+en+goederenlogistiek.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-b664e708d1e04af7a0e96b8a9f4d0df2", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-b664e708d1e04af7a0e96b8a9f4d0df2", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Juridische+ondersteuning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+juridisch+advies%2C+ondersteuning+en+beleid.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-dadad29fa6194b368c62dcb7c1cf2d38", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-dadad29fa6194b368c62dcb7c1cf2d38", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Communicatie+en+voorlichting"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+communicatie+met+en+voorlichting+aan+pati%C3%ABnten%2C+bezoekers+en+zorgprofessionals.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-672790ed9c1c4f2aadc57723ee1ef3ea", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-672790ed9c1c4f2aadc57723ee1ef3ea", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Facilitaire+ondersteuning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+de+facilitaire+ondersteuning+van+de+organisatie.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-36d8b8b67c094b13a492ac139186f32e", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-36d8b8b67c094b13a492ac139186f32e", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Personeel+en+organisatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+het+personeelsbeheer.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-3cabf797d0214816958fb2c1a78d59e9", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-3cabf797d0214816958fb2c1a78d59e9", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Financi%C3%ABle+administratie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+de+financi%C3%ABle+administratie+van+de+organisatie.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-13b024a193184568a480df40c09d88d1", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-13b024a193184568a480df40c09d88d1", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Informatie+voorziening"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+beheren+van+de+informatiehuishouding+van+de+organisatie%2C+inclusief+ICT+voorzieningen.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-faf07852c3a548bbb99dbe4b6696950c", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-faf07852c3a548bbb99dbe4b6696950c", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Veiligheid%2C+Kwaliteit%2C+Arbo%2C+en+Milieu"), documentation:decodeURL("Activiteiten+met+betrekking+tot+het+bewaken+en+optimaliseren+van+Veiligheid%2C+kwaliteit%2C+arbeidsomstandigheden+en+milieuaspecten+binnen+de+organisatie.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-48f412fbd19b4f0da515d56be50f4122", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-48f412fbd19b4f0da515d56be50f4122", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Planning+%26+control"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+het+ondersteunen+van+de+periodieke+interne+verantwoording.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-081a52d46685470aa5700900c3b3deab", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-081a52d46685470aa5700900c3b3deab", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Innovatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+het+ontwikkelen+van+bestaande+en+nieuwe+dienstverlening.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-a63f1fdfd1314d339ef33f9bb85fcb86", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-a63f1fdfd1314d339ef33f9bb85fcb86", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Marketing"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+optimale+afstemming+tussen+vraag+en+aanbod.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-da9e6c8a08e1476b81de5d83dba6d70e", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-da9e6c8a08e1476b81de5d83dba6d70e", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Performance"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+betrekking+hebben+op+het+maken%2C+meten+en+sturen+op+performance+indicatoren.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-203a95cbc03e46c3b637969f937ea007", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-203a95cbc03e46c3b637969f937ea007", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Sturing"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+het+bepalen+van+de+missie%2C+visie%2C+strategie+en+beleid+van+de+organisatie%2C+inclusief+de+inrichting+en+de+beheersing+hiervan.")});
+											dataFoldersContent.push({folderid:"id-7247d7abf01447958169e73d58bf7f4a", contentid:"id-7b9f0923983c4944b1aa327b87fba911", contenttype:"BusinessFunction"});
+												dataElements.push({id:"id-7b9f0923983c4944b1aa327b87fba911", type:"BusinessFunction", specialization:decodeURL(""), name:decodeURL("Verantwoording"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+gericht+op+de+verantwoording+van+de+organisatie+aan+de+omgeving.")});
+
+
+
+
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-fa7eb7e69632445194be72be47d13f26", contenttype:"Folder"});
+								dataFolders.push({id:"id-fa7eb7e69632445194be72be47d13f26", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-3d48cde8705645e98e82d1247ff6112b", contenttype:"Folder"});
+								dataFolders.push({id:"id-3d48cde8705645e98e82d1247ff6112b", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-2eb7ff904b9b4ce1b921d35475b9761b", contenttype:"Folder"});
+								dataFolders.push({id:"id-2eb7ff904b9b4ce1b921d35475b9761b", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-2eb7ff904b9b4ce1b921d35475b9761b", contentid:"id-5a0e28f89df34d768722a1ca41999eaa", contenttype:"Stakeholder"});
+										dataElements.push({id:"id-5a0e28f89df34d768722a1ca41999eaa", type:"Stakeholder", specialization:decodeURL(""), name:decodeURL("Stakeholder"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-ef1408c0064d4939b7677953ab1c6ab5", contenttype:"Folder"});
+								dataFolders.push({id:"id-ef1408c0064d4939b7677953ab1c6ab5", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ef1408c0064d4939b7677953ab1c6ab5", contentid:"id-8d75929584e74f0a9dfe27f4a7e2e93e", contenttype:"WorkPackage"});
+										dataElements.push({id:"id-8d75929584e74f0a9dfe27f4a7e2e93e", type:"WorkPackage", specialization:decodeURL(""), name:decodeURL("Work+Package"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ef1408c0064d4939b7677953ab1c6ab5", contentid:"id-9a2324d37c794997a8c61dc88cb03622", contenttype:"WorkPackage"});
+										dataElements.push({id:"id-9a2324d37c794997a8c61dc88cb03622", type:"WorkPackage", specialization:decodeURL(""), name:decodeURL("Work+Package"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-947f8d750b01410cbd740cc9bfec640f", contenttype:"Folder"});
+								dataFolders.push({id:"id-947f8d750b01410cbd740cc9bfec640f", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-947f8d750b01410cbd740cc9bfec640f", contentid:"id-46af5043b1db436ab0283d96a9db65bf", contenttype:"Grouping"});
+										dataElements.push({id:"id-46af5043b1db436ab0283d96a9db65bf", type:"Grouping", specialization:decodeURL(""), name:decodeURL("Offici%C3%ABle+componenten+%28bron%29"), documentation:decodeURL("De+bij+Nictiz+in+beheer+genomen+offici%C3%ABle+componenten+van+her+RDG")});
+									dataFoldersContent.push({folderid:"id-947f8d750b01410cbd740cc9bfec640f", contentid:"id-ab444356f8b84e55bcf72280d52760b6", contenttype:"Grouping"});
+										dataElements.push({id:"id-ab444356f8b84e55bcf72280d52760b6", type:"Grouping", specialization:decodeURL(""), name:decodeURL("niet+offici%C3%ABle+componenten"), documentation:decodeURL("De+door+Marcel+Schrauwen+uitwewerkte+model+en+publicatie")});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contenttype:"Folder"});
+								dataFolders.push({id:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-780dfbf396cd41a98d9dfabb7e78d78c", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-780dfbf396cd41a98d9dfabb7e78d78c", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-87d9c52569354bd2934ce7064c3c7867", targetid:"id-960158e51ae5406c9f366c0bcdc3321f"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-08d9c4a6391e42b9ab96a77b0378d6a7", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-08d9c4a6391e42b9ab96a77b0378d6a7", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-87d9c52569354bd2934ce7064c3c7867", targetid:"id-bce3ef59a132453eb9b2005f002cd39b"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-b128f3bc76fb4f1eb17a656895ad660f", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-b128f3bc76fb4f1eb17a656895ad660f", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-87d9c52569354bd2934ce7064c3c7867", targetid:"id-56c5e5a473794043a50ab86ea9f62f19"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-146aaa32c0954b8ea7a84a20d6565eb3", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-146aaa32c0954b8ea7a84a20d6565eb3", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e3ab3730df974d179fe700656dc26885", targetid:"id-6ae6ce2d40f746cabff4d9bb5e927b05"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-59047847e11e40519254413484c40c15", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-59047847e11e40519254413484c40c15", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ab444356f8b84e55bcf72280d52760b6", targetid:"id-6ae6ce2d40f746cabff4d9bb5e927b05"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-4cf2190f87cd4070ba0adef44a0923e4", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-4cf2190f87cd4070ba0adef44a0923e4", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ab444356f8b84e55bcf72280d52760b6", targetid:"id-e3ab3730df974d179fe700656dc26885"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-0916dc0108a94c2e979d7d8d1c055a59", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-0916dc0108a94c2e979d7d8d1c055a59", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-46af5043b1db436ab0283d96a9db65bf", targetid:"id-87d9c52569354bd2934ce7064c3c7867"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-c2494542b846479b9f8a348bfc7a0dc2", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-c2494542b846479b9f8a348bfc7a0dc2", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-46af5043b1db436ab0283d96a9db65bf", targetid:"id-960158e51ae5406c9f366c0bcdc3321f"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-03637b59b67e478cad555bc33755ff88", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-03637b59b67e478cad555bc33755ff88", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-46af5043b1db436ab0283d96a9db65bf", targetid:"id-56c5e5a473794043a50ab86ea9f62f19"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-72e1d1e63a284b1a9986a77a889e9e0a", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-72e1d1e63a284b1a9986a77a889e9e0a", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-46af5043b1db436ab0283d96a9db65bf", targetid:"id-bce3ef59a132453eb9b2005f002cd39b"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-fca7b0a6e47142b599ce1458b4a7cee4", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-fca7b0a6e47142b599ce1458b4a7cee4", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", targetid:"id-0c224199ebe443cda2f497ccb453b56b"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-84b769c76fce4c958d76ed8e9d66d18e", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-84b769c76fce4c958d76ed8e9d66d18e", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", targetid:"id-56967f9fa0d64d929619fc1b52da5915"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-8bbefa54b5fb45769b96b021c502d51b", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-8bbefa54b5fb45769b96b021c502d51b", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-c4fb98be45944c1191a56865b7e35572", targetid:"id-0c224199ebe443cda2f497ccb453b56b"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-13011a1e4ca24fc2a0328bf6038cf0ac", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-13011a1e4ca24fc2a0328bf6038cf0ac", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1e830e2f470a4f6499dedddd7cd8842c", targetid:"id-56967f9fa0d64d929619fc1b52da5915"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-7a3867cbd2a44c6191de3c347df66269", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-7a3867cbd2a44c6191de3c347df66269", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-56967f9fa0d64d929619fc1b52da5915", targetid:"id-5909203726d34d5db350eceb6049973f"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-bacbccd656dd4787bbebbf1f23259bb3", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-bacbccd656dd4787bbebbf1f23259bb3", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-203a95cbc03e46c3b637969f937ea007", targetid:"id-f387e590a03c47ada88eda3260532753"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-5dfaff3ec8c443ca9b0e6f8df7bf8ec5", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-5dfaff3ec8c443ca9b0e6f8df7bf8ec5", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-a63f1fdfd1314d339ef33f9bb85fcb86", targetid:"id-f387e590a03c47ada88eda3260532753"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-b8ddaf3577f74ec6b0a3dfbe65261001", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-b8ddaf3577f74ec6b0a3dfbe65261001", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-da9e6c8a08e1476b81de5d83dba6d70e", targetid:"id-f387e590a03c47ada88eda3260532753"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-7ec0444015d048fd9b3156f5eb418f8a", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-7ec0444015d048fd9b3156f5eb418f8a", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-7b9f0923983c4944b1aa327b87fba911", targetid:"id-f387e590a03c47ada88eda3260532753"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-b2f21206a6ba4d92b41406768df89645", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-b2f21206a6ba4d92b41406768df89645", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-081a52d46685470aa5700900c3b3deab", targetid:"id-f387e590a03c47ada88eda3260532753"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-bbb900577c58466c88c360ba6d0cb75f", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-bbb900577c58466c88c360ba6d0cb75f", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-2423a37f09c54469bb81c3f35e04da12", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-c2abfce9576c492ebb67bccfe3907c23", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-c2abfce9576c492ebb67bccfe3907c23", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-3018630dd5f844debadd6d603e07a19c", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-08f38933568041a49c1c55d49e136f32", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-08f38933568041a49c1c55d49e136f32", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-a048612c71484e028c4ef6f61083ef16", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-c5936442c4ed44bf9f77a8f6ac6fccb8", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-c5936442c4ed44bf9f77a8f6ac6fccb8", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-40d7fb774a09426186ac513149e01460", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-aa2815e6b0be42ea9c2acdde30b32ad3", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-aa2815e6b0be42ea9c2acdde30b32ad3", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-2bb088fb1fd94153992078e5cee9c7e3", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-d215fb394482477cb5c8d59f121263ca", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-d215fb394482477cb5c8d59f121263ca", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-8f05b57c4ab74278bad25b2e15de39f0", targetid:"id-2d034b6a9809459f85f18a7edc535eec"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-8253fa98cb9942f0a6609da1591c7a52", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-8253fa98cb9942f0a6609da1591c7a52", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6724f35d0bec48bfa770f610e7d6d78a", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-898e98f5c8b5400f8f2dfdf072f664c3", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-898e98f5c8b5400f8f2dfdf072f664c3", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-a5ed01bca8c14487a4add30307b2baf2", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-eb558bb1e4434ebd868bf103ba4c8bb7", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-eb558bb1e4434ebd868bf103ba4c8bb7", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-95c1892055a645fcac3196ef64c8c527", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-4e79c4b23c4e41d0922cccbd77e3c7bc", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-4e79c4b23c4e41d0922cccbd77e3c7bc", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-0b5e5c1e848d48829eacfdd712853223", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-2da4c8ce917a414883b8bbf3c32b89e5", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-2da4c8ce917a414883b8bbf3c32b89e5", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-3e64e1bbf48d422bbe6e0ae0c5e5cd66", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-dfd5372c8e0542029677b15ce08e04e8", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-dfd5372c8e0542029677b15ce08e04e8", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-93b07546c6ad4a54bce23b37fccd01a2", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-918077866bc846c2b5eacc61178e904d", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-918077866bc846c2b5eacc61178e904d", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-2734f2974e0e40fd9bfce098f262c0bc", targetid:"id-d963497196774f69a7d120d00adffb46"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-f8bf6b943e424fd0887d4fedd54dbde9", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-f8bf6b943e424fd0887d4fedd54dbde9", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-7d251e54584d4758abdfe0537f9a4d96", targetid:"id-33a58ab1ee1a4d5cb25c224b45d05a48"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-6c3bf76c3c4949ebbb62ca2f51680a10", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-6c3bf76c3c4949ebbb62ca2f51680a10", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6fd06de88e4f4c71811028a0e41c1de9", targetid:"id-33a58ab1ee1a4d5cb25c224b45d05a48"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-8556d6caa4ab42fd88999bc95147431a", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-8556d6caa4ab42fd88999bc95147431a", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-15440a0e30ad455bab6c8fda031727ab", targetid:"id-33a58ab1ee1a4d5cb25c224b45d05a48"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-861692c630a74e2db18198e2d7e2a6bb", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-861692c630a74e2db18198e2d7e2a6bb", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e0476eb0da4246069c9460138a989304", targetid:"id-33a58ab1ee1a4d5cb25c224b45d05a48"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-1633e3c73fdb4d86848da37850373ca1", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-1633e3c73fdb4d86848da37850373ca1", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-2c85b5a5d77143f6b744fdb2af777cea", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-28e614da66054ea9b4800500ac4a87c3", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-28e614da66054ea9b4800500ac4a87c3", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e3b49299c53743ef9e2b707ae7b91bae", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-1b12134ada3942849dac8e3d93562bfe", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-1b12134ada3942849dac8e3d93562bfe", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b664e708d1e04af7a0e96b8a9f4d0df2", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-3ab3351affbe4ef5873e9c820e56501e", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-3ab3351affbe4ef5873e9c820e56501e", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-dadad29fa6194b368c62dcb7c1cf2d38", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-b61ae5e3dbe2409a847b70b58574ec90", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-b61ae5e3dbe2409a847b70b58574ec90", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-672790ed9c1c4f2aadc57723ee1ef3ea", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-4ae7129ccef04c379ad01f1f2704417a", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-4ae7129ccef04c379ad01f1f2704417a", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-36d8b8b67c094b13a492ac139186f32e", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-d9f58931437b48ab8c54c7595648ec6b", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-d9f58931437b48ab8c54c7595648ec6b", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-3cabf797d0214816958fb2c1a78d59e9", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-278b655250ee49d2976c447cbf4b7573", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-278b655250ee49d2976c447cbf4b7573", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-13b024a193184568a480df40c09d88d1", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-0cab2df089cb4dfebb486118edf524c3", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-0cab2df089cb4dfebb486118edf524c3", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-faf07852c3a548bbb99dbe4b6696950c", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-63d45910c8d24745a8e15051d4513e16", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-63d45910c8d24745a8e15051d4513e16", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-48f412fbd19b4f0da515d56be50f4122", targetid:"id-69e86aa8a9474d43baf8e8210d5c2b4a"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-4b2344a44cbb46849e3ff414a293648e", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-4b2344a44cbb46849e3ff414a293648e", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e3ab3730df974d179fe700656dc26885", targetid:"id-c597260fb56b422fa0d14109ddebc7ac"});
+									dataFoldersContent.push({folderid:"id-ce4b2c8d0c9e4e57b1ed2b0785997a03", contentid:"id-cd67ec461cfd489a922df96b077e9b35", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-cd67ec461cfd489a922df96b077e9b35", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ab444356f8b84e55bcf72280d52760b6", targetid:"id-c597260fb56b422fa0d14109ddebc7ac"});
+
+								dataFoldersContent.push({folderid:"id-e9588a79c8a149079f510457432c480e", contentid:"id-329707faa3cf4f4bbd1e5164577a21ed", contenttype:"Folder"});
+								dataFolders.push({id:"id-329707faa3cf4f4bbd1e5164577a21ed", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-329707faa3cf4f4bbd1e5164577a21ed", contentid:"id-2d45adc8fc1f45ccab22977c574334a6", contenttype:"Folder"});
+									dataFolders.push({id:"id-2d45adc8fc1f45ccab22977c574334a6", type:"Folder", name:decodeURL("99+-+Acties"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-2d45adc8fc1f45ccab22977c574334a6", contentid:"id-6bf6e01aee0d46d18e36648cd93cea77", contenttype:"CanvasModel"});
+											dataViews.push({id:"id-6bf6e01aee0d46d18e36648cd93cea77", type:"CanvasModel", name:decodeURL("Kanban"), documentation:decodeURL("Activiteiten")});
+													
+													
+
+													
+													
+
+
+									dataFoldersContent.push({folderid:"id-329707faa3cf4f4bbd1e5164577a21ed", contentid:"id-e49270691d7542deb07e880718b86ac1", contenttype:"Folder"});
+									dataFolders.push({id:"id-e49270691d7542deb07e880718b86ac1", type:"Folder", name:decodeURL("00.+Algemeen"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-e49270691d7542deb07e880718b86ac1", contentid:"id-a9f352f616f64e27aa12b1b30e71eb10", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-a9f352f616f64e27aa12b1b30e71eb10", type:"ArchimateDiagramModel", name:decodeURL("01.+Bronverwijzing"), documentation:decodeURL("Deze+archimate+publicatie+is+%C3%A9%C3%A9n+op+%C3%A9%C3%A9n+weergave+van+de+RDG+versie+1.0+die+als+bron+geldt+voor+dit+model.%0D%0A-+Wijzigingen+worden+bewust+niet+doorgevoerd+in+deze+publicatie+maar+dienen+doorgevoerd+te+worden+in+de+bron.%0D%0A-+Foutjes+die+ontstaan+zijn+bij+het+overnemen+worden+uiteraard+wel+gecorrigeerd+wanneer+nodig%0D%0A%0D%0ABron%3A++https%3A%2F%2Fnictiz.nl%2Fstandaarden%2Freferentiedomeinenmodellen%2Freferentiedomeinmodel-ggz%2F%0D%0A%0D%0AReferentiedomeinmodel%0D%0A%EF%82%B7+referentie%3A+het+biedt+een+gemeenschappelijke+basis%2C+die+direct+toegepast+kan+worden%2C+maar+die+desgewenst+ook+toegespitst+kan+worden+op+specifieke+situaties+in+GGZ-instellingen%3B%0D%0A%EF%82%B7+domeinenmodel%3A+dit+geeft+aan+dat+het+gaat+om+een+model+dat+bestaat+uit+%28informatie%29domeinen%3B%0D%0A%EF%82%B7+GGZ%3A+het+heeft+betrekking+op+de+informatievoorziening+van+GGZ-instellingen.")});
+													dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-46af5043b1db436ab0283d96a9db65bf", contenttype:"Grouping"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-87d9c52569354bd2934ce7064c3c7867", contenttype:"Representation"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-960158e51ae5406c9f366c0bcdc3321f", contenttype:"Representation"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-56c5e5a473794043a50ab86ea9f62f19", contenttype:"Representation"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-bce3ef59a132453eb9b2005f002cd39b", contenttype:"Representation"});
+													
+													dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-ab444356f8b84e55bcf72280d52760b6", contenttype:"Grouping"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-6ae6ce2d40f746cabff4d9bb5e927b05", contenttype:"Representation"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-e3ab3730df974d179fe700656dc26885", contenttype:"Representation"});
+															dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-c597260fb56b422fa0d14109ddebc7ac", contenttype:"Representation"});
+													
+
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-0916dc0108a94c2e979d7d8d1c055a59", contenttype:"CompositionRelationship"});
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-c2494542b846479b9f8a348bfc7a0dc2", contenttype:"CompositionRelationship"});
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-03637b59b67e478cad555bc33755ff88", contenttype:"CompositionRelationship"});
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-72e1d1e63a284b1a9986a77a889e9e0a", contenttype:"CompositionRelationship"});
+
+																					dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-780dfbf396cd41a98d9dfabb7e78d78c", contenttype:"AggregationRelationship"});
+																					dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-08d9c4a6391e42b9ab96a77b0378d6a7", contenttype:"AggregationRelationship"});
+																					dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-b128f3bc76fb4f1eb17a656895ad660f", contenttype:"AggregationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-59047847e11e40519254413484c40c15", contenttype:"CompositionRelationship"});
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-4cf2190f87cd4070ba0adef44a0923e4", contenttype:"CompositionRelationship"});
+																			dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-cd67ec461cfd489a922df96b077e9b35", contenttype:"CompositionRelationship"});
+
+																					dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-146aaa32c0954b8ea7a84a20d6565eb3", contenttype:"AssociationRelationship"});
+																					dataViewsContent.push({viewid:"id-a9f352f616f64e27aa12b1b30e71eb10", contentid:"id-4b2344a44cbb46849e3ff414a293648e", contenttype:"AssociationRelationship"});
+
+													
+
+										dataFoldersContent.push({folderid:"id-e49270691d7542deb07e880718b86ac1", contentid:"id-751232d76c534c869795aae63561930d", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-751232d76c534c869795aae63561930d", type:"ArchimateDiagramModel", name:decodeURL("02.+Samenhang+tussen+bedrijfsactiviteit%2C+bedrijfsproces+en+bedrijfsfunctie"), documentation:decodeURL("In+dit+model+heb+ik+het+plaatje+uit+de+pdf+getracht+te+vertalen+naar+een+geldige+Archimate+relatie.+Ik+doe+de+aanname+dat+een+bedrijfsfunctie+de+activiteiten+bevat+die+hergebruikt+worden+door+de+processen.%0D%0A-+Een+bedrijfsactiviteit+is+slechts+aan+%C3%A9%C3%A9n+bedrijfsfunctie+gekoppeld.%0D%0A-+Een+bedrijfsactictteit+kan+hergebruikt+worden+binnen+meerdere+processen.")});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-c4fb98be45944c1191a56865b7e35572", contenttype:"BusinessFunction"});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-56967f9fa0d64d929619fc1b52da5915", contenttype:"BusinessProcess"});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-ef02282e8bcb4ada97d6ad6468c3cc2a", contenttype:"BusinessProcess"});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-1e830e2f470a4f6499dedddd7cd8842c", contenttype:"BusinessFunction"});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-0c224199ebe443cda2f497ccb453b56b", contenttype:"BusinessProcess"});
+													dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-5909203726d34d5db350eceb6049973f", contenttype:"BusinessObject"});
+
+																			dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-8bbefa54b5fb45769b96b021c502d51b", contenttype:"CompositionRelationship"});
+
+																			dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-7a3867cbd2a44c6191de3c347df66269", contenttype:"AccessRelationship"});
+
+																			dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-fca7b0a6e47142b599ce1458b4a7cee4", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-84b769c76fce4c958d76ed8e9d66d18e", contenttype:"AggregationRelationship"});
+
+																			dataViewsContent.push({viewid:"id-751232d76c534c869795aae63561930d", contentid:"id-13011a1e4ca24fc2a0328bf6038cf0ac", contenttype:"CompositionRelationship"});
+
+
+
+									dataFoldersContent.push({folderid:"id-329707faa3cf4f4bbd1e5164577a21ed", contentid:"id-695edc46bd49431490f378cd6be525be", contenttype:"Folder"});
+									dataFolders.push({id:"id-695edc46bd49431490f378cd6be525be", type:"Folder", name:decodeURL("01.+Overzichtsplaten"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-695edc46bd49431490f378cd6be525be", contentid:"id-62bd915b157c470eb2984ce8cbac2800", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-62bd915b157c470eb2984ce8cbac2800", type:"ArchimateDiagramModel", name:decodeURL("01.+Informatie+domeinen"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-f387e590a03c47ada88eda3260532753", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-203a95cbc03e46c3b637969f937ea007", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-a63f1fdfd1314d339ef33f9bb85fcb86", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-da9e6c8a08e1476b81de5d83dba6d70e", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-7b9f0923983c4944b1aa327b87fba911", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-081a52d46685470aa5700900c3b3deab", contenttype:"BusinessFunction"});
+													
+													dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2d034b6a9809459f85f18a7edc535eec", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2423a37f09c54469bb81c3f35e04da12", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-3018630dd5f844debadd6d603e07a19c", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-a048612c71484e028c4ef6f61083ef16", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-40d7fb774a09426186ac513149e01460", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2bb088fb1fd94153992078e5cee9c7e3", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-8f05b57c4ab74278bad25b2e15de39f0", contenttype:"BusinessFunction"});
+													
+													dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-d963497196774f69a7d120d00adffb46", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-6724f35d0bec48bfa770f610e7d6d78a", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-a5ed01bca8c14487a4add30307b2baf2", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-95c1892055a645fcac3196ef64c8c527", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-0b5e5c1e848d48829eacfdd712853223", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-3e64e1bbf48d422bbe6e0ae0c5e5cd66", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-93b07546c6ad4a54bce23b37fccd01a2", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2734f2974e0e40fd9bfce098f262c0bc", contenttype:"BusinessFunction"});
+													
+													dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-33a58ab1ee1a4d5cb25c224b45d05a48", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-7d251e54584d4758abdfe0537f9a4d96", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-6fd06de88e4f4c71811028a0e41c1de9", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-15440a0e30ad455bab6c8fda031727ab", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-e0476eb0da4246069c9460138a989304", contenttype:"BusinessFunction"});
+													
+													dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-69e86aa8a9474d43baf8e8210d5c2b4a", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2c85b5a5d77143f6b744fdb2af777cea", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-e3b49299c53743ef9e2b707ae7b91bae", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-b664e708d1e04af7a0e96b8a9f4d0df2", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-dadad29fa6194b368c62dcb7c1cf2d38", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-672790ed9c1c4f2aadc57723ee1ef3ea", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-36d8b8b67c094b13a492ac139186f32e", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-3cabf797d0214816958fb2c1a78d59e9", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-13b024a193184568a480df40c09d88d1", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-faf07852c3a548bbb99dbe4b6696950c", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-48f412fbd19b4f0da515d56be50f4122", contenttype:"BusinessFunction"});
+													
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-bacbccd656dd4787bbebbf1f23259bb3", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-5dfaff3ec8c443ca9b0e6f8df7bf8ec5", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-b8ddaf3577f74ec6b0a3dfbe65261001", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-7ec0444015d048fd9b3156f5eb418f8a", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-b2f21206a6ba4d92b41406768df89645", contenttype:"SpecializationRelationship"});
+
+													
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-bbb900577c58466c88c360ba6d0cb75f", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-c2abfce9576c492ebb67bccfe3907c23", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-08f38933568041a49c1c55d49e136f32", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-c5936442c4ed44bf9f77a8f6ac6fccb8", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-aa2815e6b0be42ea9c2acdde30b32ad3", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-d215fb394482477cb5c8d59f121263ca", contenttype:"SpecializationRelationship"});
+
+													
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-8253fa98cb9942f0a6609da1591c7a52", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-898e98f5c8b5400f8f2dfdf072f664c3", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-eb558bb1e4434ebd868bf103ba4c8bb7", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-4e79c4b23c4e41d0922cccbd77e3c7bc", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-2da4c8ce917a414883b8bbf3c32b89e5", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-dfd5372c8e0542029677b15ce08e04e8", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-918077866bc846c2b5eacc61178e904d", contenttype:"SpecializationRelationship"});
+
+													
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-f8bf6b943e424fd0887d4fedd54dbde9", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-6c3bf76c3c4949ebbb62ca2f51680a10", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-8556d6caa4ab42fd88999bc95147431a", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-861692c630a74e2db18198e2d7e2a6bb", contenttype:"SpecializationRelationship"});
+
+													
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-1633e3c73fdb4d86848da37850373ca1", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-28e614da66054ea9b4800500ac4a87c3", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-1b12134ada3942849dac8e3d93562bfe", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-3ab3351affbe4ef5873e9c820e56501e", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-b61ae5e3dbe2409a847b70b58574ec90", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-4ae7129ccef04c379ad01f1f2704417a", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-d9f58931437b48ab8c54c7595648ec6b", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-278b655250ee49d2976c447cbf4b7573", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-0cab2df089cb4dfebb486118edf524c3", contenttype:"SpecializationRelationship"});
+
+																					dataViewsContent.push({viewid:"id-62bd915b157c470eb2984ce8cbac2800", contentid:"id-63d45910c8d24745a8e15051d4513e16", contenttype:"SpecializationRelationship"});
+
+													
+
+
+									dataFoldersContent.push({folderid:"id-329707faa3cf4f4bbd1e5164577a21ed", contentid:"id-08066ff1975a4908a4d76511f2b742a4", contenttype:"Folder"});
+									dataFolders.push({id:"id-08066ff1975a4908a4d76511f2b742a4", type:"Folder", name:decodeURL("02.+Uitwerking+informatiedomeinen"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-918ad4d868564694bb418032e7bedb08", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-918ad4d868564694bb418032e7bedb08", type:"ArchimateDiagramModel", name:decodeURL("0101.+Sturing+en+verantwoording+-+Sturing"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+het+bepalen+van+de+missie%2C+visie%2C+strategie+en+beleid+van+de+organisatie%2C+inclusief+de+inrichting+en+de+beheersing+hiervan.")});
+													dataViewsContent.push({viewid:"id-918ad4d868564694bb418032e7bedb08", contentid:"id-203a95cbc03e46c3b637969f937ea007", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-250818192bb643eda3705ebe4ccee162", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-250818192bb643eda3705ebe4ccee162", type:"ArchimateDiagramModel", name:decodeURL("0102.+Sturing+en+verantwoording+-+Marketing"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+optimale+afstemming+tussen+vraag+en+aanbod.")});
+													dataViewsContent.push({viewid:"id-250818192bb643eda3705ebe4ccee162", contentid:"id-a63f1fdfd1314d339ef33f9bb85fcb86", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-a475e3789c4b42948e5e8ba6f5430b97", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-a475e3789c4b42948e5e8ba6f5430b97", type:"ArchimateDiagramModel", name:decodeURL("0103.+Sturing+en+verantwoording+-+Performance"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+betrekking+hebben+op+het+maken%2C+meten+en+sturen+op+performance+indicatoren.")});
+													dataViewsContent.push({viewid:"id-a475e3789c4b42948e5e8ba6f5430b97", contentid:"id-da9e6c8a08e1476b81de5d83dba6d70e", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-e627eca271354267aa6d13b8033742be", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-e627eca271354267aa6d13b8033742be", type:"ArchimateDiagramModel", name:decodeURL("0104.+Sturing+en+verantwoording+-+Verantwoording"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+gericht+op+de+verantwoording+van+de+organisatie+aan+de+omgeving.")});
+													dataViewsContent.push({viewid:"id-e627eca271354267aa6d13b8033742be", contentid:"id-7b9f0923983c4944b1aa327b87fba911", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-56d713c86ddb463381e947545fa4bc85", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-56d713c86ddb463381e947545fa4bc85", type:"ArchimateDiagramModel", name:decodeURL("0105.+Sturing+en+verantwoording+-+Innovatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+het+ontwikkelen+van+bestaande+en+nieuwe+dienstverlening.")});
+													dataViewsContent.push({viewid:"id-56d713c86ddb463381e947545fa4bc85", contentid:"id-081a52d46685470aa5700900c3b3deab", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-0387ab0058754590ba86be770d5c9134", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-0387ab0058754590ba86be770d5c9134", type:"ArchimateDiagramModel", name:decodeURL("02.01.+Samenwerking+-+Verwijziging"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+voor+verwijzingen+van+en+naar+andere+zorgverleners.")});
+													dataViewsContent.push({viewid:"id-0387ab0058754590ba86be770d5c9134", contentid:"id-2423a37f09c54469bb81c3f35e04da12", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-781e684e39574421a94ddc988f1c8901", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-781e684e39574421a94ddc988f1c8901", type:"ArchimateDiagramModel", name:decodeURL("02.02.+Samenwerking+-+Informatie+uitwisseling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+uitwisseling+van+zorginformatie+met+externe+zorgverleners+%28excl.+verwijzingen%29.")});
+													dataViewsContent.push({viewid:"id-781e684e39574421a94ddc988f1c8901", contentid:"id-3018630dd5f844debadd6d603e07a19c", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-50077f36a3aa41e59936ab55524bf9b2", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-50077f36a3aa41e59936ab55524bf9b2", type:"ArchimateDiagramModel", name:decodeURL("02.03.+Samenwerking+-+Participatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+de+participatie+van+de+pati%C3%ABnt+bij+zijn+eigen+zorgproces.")});
+													dataViewsContent.push({viewid:"id-50077f36a3aa41e59936ab55524bf9b2", contentid:"id-a048612c71484e028c4ef6f61083ef16", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-ab7b505556a64f3d9943caa6532dbde3", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-ab7b505556a64f3d9943caa6532dbde3", type:"ArchimateDiagramModel", name:decodeURL("02.04.+Samenwerking+-+Kennismanagement"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+nodig+zijn+voor+managen+van+de+informatie-uitwisseling+tussen+kennisaanbieder+en+kennisvrager.")});
+													dataViewsContent.push({viewid:"id-ab7b505556a64f3d9943caa6532dbde3", contentid:"id-40d7fb774a09426186ac513149e01460", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-afc321698da9452b9613c8c43140aba0", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-afc321698da9452b9613c8c43140aba0", type:"ArchimateDiagramModel", name:decodeURL("02.05.+Samenwerking+-+Wetenschappelijk+onderzoek"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+wetenschappelijk+onderzoek.")});
+													dataViewsContent.push({viewid:"id-afc321698da9452b9613c8c43140aba0", contentid:"id-2bb088fb1fd94153992078e5cee9c7e3", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-5061453440c84523bfa988729a659684", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-5061453440c84523bfa988729a659684", type:"ArchimateDiagramModel", name:decodeURL("02.06.+Samenwerking+-+Onderwijs"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+die+gericht+zijn+op+het+aanbieden+van+onderwijs.")});
+													dataViewsContent.push({viewid:"id-5061453440c84523bfa988729a659684", contentid:"id-8f05b57c4ab74278bad25b2e15de39f0", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-1f6371785a7e4343b4291c3752a69992", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-1f6371785a7e4343b4291c3752a69992", type:"ArchimateDiagramModel", name:decodeURL("0301.+Zorgverlening+-+Aanmelding"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+de+aanmelding+van+%28nieuwe%29+pati%C3%ABnten%2C+doorverwezen+door+een+erkende+verwijzer.")});
+													dataViewsContent.push({viewid:"id-1f6371785a7e4343b4291c3752a69992", contentid:"id-0b5e5c1e848d48829eacfdd712853223", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-712e4702e66742a183bfe2a3fd2e2b43", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-712e4702e66742a183bfe2a3fd2e2b43", type:"ArchimateDiagramModel", name:decodeURL("0302.+Zorgverlening+-+Toeleiding"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+bepalen+van+de+noodzakelijke+zorg+op+basis+van+een+gestelde+diagnose+en+de+vaststelling+daarvan+in+de+vorm+van+een+behandelplan.")});
+													dataViewsContent.push({viewid:"id-712e4702e66742a183bfe2a3fd2e2b43", contentid:"id-3e64e1bbf48d422bbe6e0ae0c5e5cd66", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-226f1a4f6f3b4275a6094c4925eed107", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-226f1a4f6f3b4275a6094c4925eed107", type:"ArchimateDiagramModel", name:decodeURL("0303.+Zorgverlening+-+Behandeling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+uitvoeren%2C+meten+en+bijstellen+van+de+behandeling%28en%29+en+begeleiding+van+de+pati%C3%ABnt+daarbij.")});
+													dataViewsContent.push({viewid:"id-226f1a4f6f3b4275a6094c4925eed107", contentid:"id-6724f35d0bec48bfa770f610e7d6d78a", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-12c36a4b720e4d87b047b9e19cb2aa73", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-12c36a4b720e4d87b047b9e19cb2aa73", type:"ArchimateDiagramModel", name:decodeURL("0304.+Zorgverlening+-+Verzorging"), documentation:decodeURL("+Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+verzorgen+van+de+pati%C3%ABnt+en+het+bieden+van+zorgondersteunende+%28klinische%29+diensten.")});
+													dataViewsContent.push({viewid:"id-12c36a4b720e4d87b047b9e19cb2aa73", contentid:"id-a5ed01bca8c14487a4add30307b2baf2", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-0a204e43132f43ebbbdc62f6d4bc971b", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-0a204e43132f43ebbbdc62f6d4bc971b", type:"ArchimateDiagramModel", name:decodeURL("0305.+Zorgverlening+-+Medicatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+voorschrijven%2C+bereiden+en+toedienen+van+medicatie%2C+alsmede+het+bewaken+van+medicatiegebruik.")});
+													dataViewsContent.push({viewid:"id-0a204e43132f43ebbbdc62f6d4bc971b", contentid:"id-95c1892055a645fcac3196ef64c8c527", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-da21794b4c88483ab421ac7f02ff224f", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-da21794b4c88483ab421ac7f02ff224f", type:"ArchimateDiagramModel", name:decodeURL("0306.+Zorgverlening+-+Be%C3%ABindigen+zorg"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+be%C3%ABindigen+van+de+zorgrelatie+en+afsluiten+van+de+behandeling+door+ontslag+en%2Fof+overdracht+in+de+keten.")});
+													dataViewsContent.push({viewid:"id-da21794b4c88483ab421ac7f02ff224f", contentid:"id-93b07546c6ad4a54bce23b37fccd01a2", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-28b4f4d9831b41819420eeb265b35b9c", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-28b4f4d9831b41819420eeb265b35b9c", type:"ArchimateDiagramModel", name:decodeURL("0307.+Zorgverlening+-+Aanvullend+onderzoek"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+doen+van+intern+of+extern+aanvullend+onderzoek+ten+behoeve+van+toeleiding+of+behandeling+van+de+pati%C3%ABnt.")});
+													dataViewsContent.push({viewid:"id-28b4f4d9831b41819420eeb265b35b9c", contentid:"id-2734f2974e0e40fd9bfce098f262c0bc", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-e2fd88dfa80248ac9778315cd3ddeafe", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-e2fd88dfa80248ac9778315cd3ddeafe", type:"ArchimateDiagramModel", name:decodeURL("0401.+Zorgprocesondersteuning+-+Zorgrelatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+identificeren%2C+vastleggen+en+onderhouden+van+zorgrelaties%2C+inclusief+zorgverleners+en+financiers.")});
+													dataViewsContent.push({viewid:"id-e2fd88dfa80248ac9778315cd3ddeafe", contentid:"id-7d251e54584d4758abdfe0537f9a4d96", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-6d1ef4f2fcb2422e8a7ab5115c2bec09", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-6d1ef4f2fcb2422e8a7ab5115c2bec09", type:"ArchimateDiagramModel", name:decodeURL("0402.+Zorgprocesondersteuning+-+Resource+planning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+plannen+van+de+inzet+van+personeel+en+locaties.")});
+													dataViewsContent.push({viewid:"id-6d1ef4f2fcb2422e8a7ab5115c2bec09", contentid:"id-6fd06de88e4f4c71811028a0e41c1de9", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-999189e4d2d64437890fca4c1a71100b", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-999189e4d2d64437890fca4c1a71100b", type:"ArchimateDiagramModel", name:decodeURL("0403.+Zorgprocesondersteuning+-+Zorgplanning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+vastleggen+van+afspraken+en+planning+van+de+zorgverlening+aan+pati%C3%ABnten.")});
+													dataViewsContent.push({viewid:"id-999189e4d2d64437890fca4c1a71100b", contentid:"id-15440a0e30ad455bab6c8fda031727ab", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-a5c8b4eaea1e4296a6b347e6a9184296", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-a5c8b4eaea1e4296a6b347e6a9184296", type:"ArchimateDiagramModel", name:decodeURL("0404.+Zorgprocesondersteuning+-+Financi%C3%ABle+afhandeling"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+registreren+van+behandelactiviteiten+%28DBC%27s%29+en+zorgverlening%2C+ten+behoeve+van+de+facturering+van+de+zorg.")});
+													dataViewsContent.push({viewid:"id-a5c8b4eaea1e4296a6b347e6a9184296", contentid:"id-e0476eb0da4246069c9460138a989304", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-2051c1acd8e74a93ad1173c67706d359", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-2051c1acd8e74a93ad1173c67706d359", type:"ArchimateDiagramModel", name:decodeURL("0501.+Bedrijfsondersteuning+-+Beheer+gebouwen"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+met+betrekking+tot+het+beheren+en+exploiteren+van+gebouwen.")});
+													dataViewsContent.push({viewid:"id-2051c1acd8e74a93ad1173c67706d359", contentid:"id-2c85b5a5d77143f6b744fdb2af777cea", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-d22c95c9b78541b7900223e2abe6dbf5", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-d22c95c9b78541b7900223e2abe6dbf5", type:"ArchimateDiagramModel", name:decodeURL("0502.+Bedrijfsondersteuning+-+Inkoop-%2C+contract-%2C+en+voorraad-beheer"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+inkoop%2C+contractuele+afspraken+en+goederenlogistiek.")});
+													dataViewsContent.push({viewid:"id-d22c95c9b78541b7900223e2abe6dbf5", contentid:"id-e3b49299c53743ef9e2b707ae7b91bae", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-20b6bb68fda143d380283fe008829218", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-20b6bb68fda143d380283fe008829218", type:"ArchimateDiagramModel", name:decodeURL("0503.+Bedrijfsondersteuning+-+Juridische+ondersteuning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+juridisch+advies%2C+ondersteuning+en+beleid.")});
+													dataViewsContent.push({viewid:"id-20b6bb68fda143d380283fe008829218", contentid:"id-b664e708d1e04af7a0e96b8a9f4d0df2", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-c5ad090ef87f4644ab9a93e9b7a8d4f8", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-c5ad090ef87f4644ab9a93e9b7a8d4f8", type:"ArchimateDiagramModel", name:decodeURL("0504.+Bedrijfsondersteuning+-+Communicatie+en+voorlichting"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+communicatie+met+en+voorlichting+aan+pati%C3%ABnten%2C+bezoekers+en+zorgprofessionals.")});
+													dataViewsContent.push({viewid:"id-c5ad090ef87f4644ab9a93e9b7a8d4f8", contentid:"id-dadad29fa6194b368c62dcb7c1cf2d38", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-7be94c5d4dc74632a7a2ea76fba5666b", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-7be94c5d4dc74632a7a2ea76fba5666b", type:"ArchimateDiagramModel", name:decodeURL("0505.+Bedrijfsondersteuning+-+Facilitaire+ondersteuning"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+de+facilitaire+ondersteuning+van+de+organisatie.")});
+													dataViewsContent.push({viewid:"id-7be94c5d4dc74632a7a2ea76fba5666b", contentid:"id-672790ed9c1c4f2aadc57723ee1ef3ea", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-72c18e6db0474d9d83de28902a491c12", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-72c18e6db0474d9d83de28902a491c12", type:"ArchimateDiagramModel", name:decodeURL("0506.+Bedrijfsondersteuning+-+Personeel+en+organisatie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+het+personeelsbeheer.")});
+													dataViewsContent.push({viewid:"id-72c18e6db0474d9d83de28902a491c12", contentid:"id-36d8b8b67c094b13a492ac139186f32e", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-efed005ac6ac498c9d3ee55b30c68b53", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-efed005ac6ac498c9d3ee55b30c68b53", type:"ArchimateDiagramModel", name:decodeURL("0507.+Bedrijfsondersteuning+-+Financi%C3%ABle+administratie"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+de+financi%C3%ABle+administratie+van+de+organisatie.")});
+													dataViewsContent.push({viewid:"id-efed005ac6ac498c9d3ee55b30c68b53", contentid:"id-3cabf797d0214816958fb2c1a78d59e9", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-9f519244b93c42e5a78cef105ac7c9b9", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-9f519244b93c42e5a78cef105ac7c9b9", type:"ArchimateDiagramModel", name:decodeURL("0508.+Bedrijfsondersteuning+-+Informatie+voorziening"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+op+het+gebied+van+het+beheren+van+de+informatiehuishouding+van+de+organisatie%2C+inclusief+ICT+voorzieningen.")});
+													dataViewsContent.push({viewid:"id-9f519244b93c42e5a78cef105ac7c9b9", contentid:"id-13b024a193184568a480df40c09d88d1", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-a8676986f0f741f8807ec90a4985c7ea", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-a8676986f0f741f8807ec90a4985c7ea", type:"ArchimateDiagramModel", name:decodeURL("0509.+Bedrijfsondersteuning+-+Veiligheid%2C+Kwaliteit%2C+Arbo%2C+en+Milieu"), documentation:decodeURL("Activiteiten+met+betrekking+tot+het+bewaken+en+optimaliseren+van+Veiligheid%2C+kwaliteit%2C+arbeidsomstandigheden+en+milieuaspecten+binnen+de+organisatie.")});
+													dataViewsContent.push({viewid:"id-a8676986f0f741f8807ec90a4985c7ea", contentid:"id-faf07852c3a548bbb99dbe4b6696950c", contenttype:"BusinessFunction"});
+
+										dataFoldersContent.push({folderid:"id-08066ff1975a4908a4d76511f2b742a4", contentid:"id-57cc090575014c619e35ab30ec6e2468", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-57cc090575014c619e35ab30ec6e2468", type:"ArchimateDiagramModel", name:decodeURL("0510.+Bedrijfsondersteuning+-+Planning+%26+control"), documentation:decodeURL("Dit+domein+bevat+de+activiteiten+ten+behoeve+van+het+ondersteunen+van+de+periodieke+interne+verantwoording.")});
+													dataViewsContent.push({viewid:"id-57cc090575014c619e35ab30ec6e2468", contentid:"id-48f412fbd19b4f0da515d56be50f4122", contenttype:"BusinessFunction"});
+
+
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
